@@ -7,17 +7,8 @@ h1, h2, p {
     font-family: 'Lemonada', cursive;
 }
 
-#rating {
-    /* width: 80px; */
-}
-
-.bookmark-view {
-    border: 3px solid black;
-}
-
 
 #bookmark-form {
-    border: 3px solid black;
     display: flex;
     flex-direction: column;
 }
