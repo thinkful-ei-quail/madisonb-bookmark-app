@@ -10,7 +10,7 @@ const generateItemElement = function (bookmark, index) {
       return `
         <div>
           <h1 class="bookmark-paragraph bookmark-title" id="${bookmark.id}">${bookmark.title}</h1>
-          <button><a href=${bookmark.url} target="_blank">${bookmark.title}</a></button>
+          <button><a href=${bookmark.url} target="_blank">Visit ${bookmark.title}</a></button>
           <p>${bookmark.rating}</p>
           <p>${bookmark.desc}</p>
           <button class="delete-bookmark">Delete</button>
