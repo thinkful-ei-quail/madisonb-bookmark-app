@@ -1,0 +1,12 @@
+body {
+    background-color: #ccd9ff;
+    text-align: center;
+}
+
+h1, h2, p {
+    font-family: 'Lemonada', cursive;
+}
+
+#rating {
+    width: 80px;
+}
