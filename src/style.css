@@ -1,12 +1,38 @@
 body {
     background-color: #ccd9ff;
     text-align: center;
-}
+} 
 
 h1, h2, p {
     font-family: 'Lemonada', cursive;
 }
 
 #rating {
-    width: 80px;
+    /* width: 80px; */
+}
+
+.bookmark-view {
+    border: 3px solid black;
+}
+
+
+#bookmark-form {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookmarks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
 }

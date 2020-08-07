@@ -8,13 +8,13 @@ import api from "./api"
 const generateItemElement = function (bookmark, index) {
     if (bookmark.expanded) {
       return `
-        <div>
+        <section class="bookmark-view">
           <h1 class="bookmark-paragraph bookmark-title" id="${bookmark.id}">${bookmark.title}</h1>
-          <button><a href=${bookmark.url} target="_blank">Visit ${bookmark.title}</a></button>
+          <button class="btn"><a href=${bookmark.url} target="_blank">Visit ${bookmark.title}</a></button>
           <p>${bookmark.rating}</p>
           <p>${bookmark.desc}</p>
-          <button class="delete-bookmark">Delete</button>
-        </div>
+          <button class="delete-bookmark btn">Delete</button>
+        </section>
         `
     } else {
     return `
@@ -48,6 +48,7 @@ const generateBookmarkString = function (bookmarks) {
 
     items = items.join("")
     return `
+    <div class ="main">
     <button id="new-bookmark">New</button>
     <!-- <label for="filter-bookmark">Choose rating</label> -->
     <select id="filter-bookmark">
@@ -59,6 +60,7 @@ const generateBookmarkString = function (bookmarks) {
       <option value="5">5</option>
     </select>
     <section class="bookmarks">${items}</section>
+    </div>
     `
   }
 }
