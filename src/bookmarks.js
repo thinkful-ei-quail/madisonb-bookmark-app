@@ -36,7 +36,7 @@ const generateBookmarkString = function (bookmarks) {
         <br/>
         <input id="title" placeholder="title" type="text" required />
         <br/>
-        <input id="rating" placeholder="rating" type="number" min="1" max="5">
+        <input id="rating" placeholder="rating" type="number" min="1" max="5" required />
         <br/>
         <button class="submit" type="submit">Submit</button>
         <button class="cancel" type="button">Cancel</button>
